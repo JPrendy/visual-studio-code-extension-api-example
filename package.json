@@ -1,0 +1,34 @@
+{
+	"name": "helloworld-minimal-sample",
+	"description": "Minimal HelloWorld example for VS Code",
+	"version": "0.0.1",
+	"publisher": "vscode-samples",
+	"repository": "https://github.com/Microsoft/vscode-extension-samples/helloworld-minimal-sample",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"activationEvents": [
+		"onCommand:extension.getBusOne",
+		"onCommand:extension.getBusTwo"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.getBusOne",
+				"title": "Get Bus One"
+			},
+			{
+				"command": "extension.getBusTwo",
+				"title": "Get Bus Two"
+			}
+		]
+	},
+	"scripts": {},
+	"devDependencies": {
+		"@types/vscode": "^1.32.0"
+	},
+	"dependencies": {
+		"axios": "^0.19.2"
+	}
+}
